@@ -66,11 +66,8 @@ def main(n: int, r: int, p: int) -> None:
     print(binomial_distribution(n, r, p))
 
 if __name__ == '__main__':
-    # Number of occurrences of the event of interest
-    n = 5
-    # Number of successful occurrences
-    r = 2
-    # Probability of success per trial
-    p = 0.5
+    # n = Number of occurrences of the event of interest
+    # r = Number of successful occurrences
+    # p = Probability of success per trialp 
     main(n, r, p)
     
