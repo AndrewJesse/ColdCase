@@ -1,9 +1,0 @@
-setup.py
-learn_pandas.egg-info/PKG-INFO
-learn_pandas.egg-info/SOURCES.txt
-learn_pandas.egg-info/dependency_links.txt
-learn_pandas.egg-info/entry_points.txt
-learn_pandas.egg-info/requires.txt
-learn_pandas.egg-info/top_level.txt
-tests/__init__.py
-tests/test_binomial_distribution.py
