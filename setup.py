@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(
-    name='PyJ',
+    name='ColdCase', 
     version='0.1.0',
     packages=find_packages(),
     install_requires=[
@@ -9,13 +9,13 @@ setup(
     ],
     entry_points={
         'console_scripts': [
-            'PyJ=PyJ.__main__:main',
+            'ColdCase=ColdCase.__main__:main',
         ],
     },
     author='Andrew Marchese',
     author_email='aj.marchese@outlook.com',
     description='Various libraries',
-    url='https://github.com/AndrewJesse/PyJ',
+    url='https://github.com/AndrewJesse/ColdCase',  
     classifiers=[
         'Programming Language :: Python :: 3',
         'License :: OSI Approved :: MIT License',
