@@ -2,4 +2,9 @@
 
 1) cd to `root`
 2) `pip install git+https://github.com/AndrewJesse/ColdCase.git`
-3) 
+
+
+
+Remove-Item -Recurse -Force dist, build
+python setup.py sdist bdist_wheel
+twine upload dist/*
