@@ -3,7 +3,7 @@
 1) cd to `root`
 2) `pip install git+https://github.com/AndrewJesse/ColdCase.git`
 
-Update version number in setup.py
-Remove-Item -Recurse -Force dist, build
-python setup.py sdist bdist_wheel
-twine upload dist/*
+- Update version number in setup.py
+- Remove-Item -Recurse -Force dist, build
+- python setup.py sdist bdist_wheel
+- twine upload dist/*
