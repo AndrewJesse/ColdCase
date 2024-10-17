@@ -1,4 +1,4 @@
-from typing import Union
+from typing import List, Union
 
 class BasicArithmetic:
     def multiply(self, *args:Union[int, float]) -> float:
@@ -31,10 +31,10 @@ class BasicArithmetic:
             raise ValueError("Square root of negative number is not possible")
         return num ** 0.5
    
-    def mean(self, data):
+    def mean(self, data: Union[List[int], List[float]]) -> float:
         return sum(data) / len(data)
 
-    def median(data):
+    def median(self, data: Union[List[int], List[float]]) -> float:
         data.sort()
         n = len(data)
         if n % 2 == 0:
@@ -42,7 +42,7 @@ class BasicArithmetic:
         else:
             return data[n // 2]
 
-    def mode(data):
+    def mode(self, data: Union[List[int], List[float]]) -> float:
         freq = {}
         for i in data:
             if i in freq:
@@ -53,7 +53,7 @@ class BasicArithmetic:
         modes = [k for k, v in freq.items() if v == max_freq]
         return modes
 
-    def standard_deviation(self, data):
+    def standard_deviation(self, data: Union[List[int], List[float]]) -> float:
         m = self.mean(data)
         return (sum([(x - m) ** 2 for x in data]) / len(data)) ** 0.5
     
@@ -63,3 +63,4 @@ assert math.multiply(2, 3, 4) == 24
 assert math.multiply(2, 3, 4, 5) == 120
 assert math.divide(2, 3, 4) == 0.16666666666666666
 assert math.squareroot(4) == 2
+assert math.mean([2.5, 4.5]) == 3.5 
